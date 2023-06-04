@@ -14,7 +14,7 @@
                 setAmount(event.target.value);
             };
             const reset = () => setAmount(0);
-            const onFlip = () => {
+            const invert = () => {
                 reset();
                 setInverted(current => !current);
             };
@@ -44,7 +44,7 @@
                         />
                     </div>
                     <button onClick={reset}>Reset</button>
-                    <button onClick={onFlip}>Invert</button>
+                    <button onClick={invert}>{inverted ? "Turn Back" : "Invert"}</button>
                 </div>
                     );
                 }
